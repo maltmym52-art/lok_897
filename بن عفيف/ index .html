@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بن عفيف للصرافة - إرسال الحوالات وتسديد الفواتير</title>
+    <meta name="description" content="خدمات إرسال واستلام الحوالات، تسديد الفواتير، والاطلاع على الحركة المالية في اليمن">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#065f46", // لون أخضر داكن جديد
+                        secondary: "#dc2626",
+                        accent: "#059669",
+                        dark_green_gradient: "#047857" // لون لتدريج الخلفيات
+                    },
+                    fontFamily: {
+                        'arabic': ['Tahoma', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Tahoma', 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50 font-arabic">
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <img src="img/unnamed.png">
+                    </div>
+                    <h1 class="text-2xl font-bold text-gray-800">بن عفيف للصرافة</h1>
+                </div>
+                
+                <div class="hidden md:flex space-x-6 space-x-reverse">
+                    <a href="#" class="text-gray-700 hover:text-primary transition duration-300" onclick="event.preventDefault(); scrollToSection('about')">من نحن</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition duration-300" onclick="event.preventDefault(); scrollToSection('services')">خدماتنا</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition duration-300" onclick="event.preventDefault(); scrollToSection('features')">المميزات</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition duration-300" onclick="event.preventDefault(); scrollToSection('locations')">فروعنا</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition duration-300" onclick="event.preventDefault(); scrollToSection('contact')">اتصل بنا</a>
+                </div>
+                
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button class="md:hidden text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-gradient-to-l from-primary to-dark_green_gradient text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">خدمات مالية متكاملة</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    إرسال واستلام الحوالات، تسديد الفواتير، والاطلاع على الحركة المالية
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">من نحن</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    نقدم حلولاً مالية متكاملة تلبي احتياجاتك في إرسال واستلام الحوالات المالية، 
+                    تسديد الفواتير، والاطلاع على الحركة المالية بكل سهولة وأمان
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-exchange-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">إرسال الحوالات</h3>
+                    <p class="text-gray-600">إرسال واستلام الحوالات داخل وخارج الجمهورية اليمنية بكل أمان وسرعة</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-file-invoice-dollar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">تسديد الفواتير</h3>
+                    <p class="text-gray-600">تسديد فواتير الخدمات المختلفة بكل سهولة وأمان من خلال منصتنا</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">الحركة المالية</h3>
+                    <p class="text-gray-600">الاطلاع على كافة الحركات المالية وكشف الحساب بشكل مفصل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">خدماتنا</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-globe-americas text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mr-4">إرسال الحوالات</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        إرسال الحوالات من وإلى أي مكان خارج وداخل الجمهورية اليمنية بكل أمان وسرعة
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            تحويلات داخلية
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            تحويلات دولية
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            معالجة فورية
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mr-4">شحن الرصيد والباقات</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        خدمات شحن الرصيد والباقات لجميع الشركات اليمنية
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            سبأفون
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            يمن موبايل
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            ام تي ان
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            الهاتف الثابت
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            واي فاي - الانترنت
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                            <i class="fas fa-file-invoice text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mr-4">كشف الحساب</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        الاطلاع على كشف حسابك وجميع عملياتك في النظام بشكل مفصل
+                    </p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            كشف حساب شامل
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            تفاصيل جميع العمليات
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 ml-2"></i>
+                            تقارير مالية
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">المميزات</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-bolt text-white"></i>
+                    </div>
+                    <div class="mr-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">التحويل الفوري</h3>
+                        <p class="text-gray-600">
+                            التحويل من حسابك إلى أي حساب آخر في نفس اللحظة بدون تأخير
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-cogs text-white"></i>
+                    </div>
+                    <div class="mr-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">التحكم الكامل</h3>
+                        <p class="text-gray-600">
+                            التحكم الكامل بحسابك والاطلاع على كافة الحركات المالية
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-chart-bar text-white"></i>
+                    </div>
+                    <div class="mr-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">أسعار العملات</h3>
+                        <p class="text-gray-600">
+                            معرفة أسعار البيع والشراء للعملات الأجنبية لحظة بلحظة
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-dark_green_gradient rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <i class="fas fa-shield-alt text-white"></i>
+                    </div>
+                    <div class="mr-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">أمان متكامل</h3>
+                        <p class="text-gray-600">
+                            أنظمة أمان متطورة لحماية حساباتك ومعاملاتك المالية
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="locations" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">فروعنا</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    نحن هنا لخدمتك. تفضل بزيارة أقرب فرع إليك.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 flex items-start space-x-4 space-x-reverse">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-building text-white text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">المركز الرئيسي</h3>
+                        <p class="text-gray-600">العنوان: حضرموت - اليمن</p>
+                        <p class="text-gray-600">هاتف: +967 774 736 089</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 flex items-start space-x-4 space-x-reverse">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-map-pin text-white text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">فرع سيئون</h3>
+                        <p class="text-gray-600">العنوان: سيئون -حضرموت</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 flex items-start space-x-4 space-x-reverse">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-map-marked-alt text-white text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">مكتب حورة</h3>
+                        <p class="text-gray-600">العنوان: حورة - حضرموت</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 flex items-start space-x-4 space-x-reverse">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-map-pin text-white text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">مكتب المهاجرين</h3>
+                        <p class="text-gray-600">العنوان: حضرموت</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 flex items-start space-x-4 space-x-reverse">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-money-check-alt text-white text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">مجموعة بن عفيف للصرافة والتحويلات</h3>
+                        <p class="text-gray-600">جهة معتمدة لخدماتنا في حضرموت وباقي المحافظات الجنوبية</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 flex items-start space-x-4 space-x-reverse">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-map-pin text-white text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">فرع تريم</h3>
+                        <p class="text-gray-600">العنوان: تريم - حضرموت</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 flex items-start space-x-4 space-x-reverse">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-map-pin text-white text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">فرع سيئون - شارع الجزائر</h3>
+                        <p class="text-gray-600">العنوان: شارع الجزائر - سيئون، حضرموت</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">ابدأ باستخدام خدماتنا الآن</h2>
+            <p class="text-xl mb-8 opacity-90">
+                انضم إلى آلاف العملاء الذين يثقون بنا في معاملاتهم المالية
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://play.google.com/store/apps/details?id=ebs.apps.android.exchange.express.bin_affef" target="_blank" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-primary transition duration-300">
+                    تحميل التطبيق
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">بن عفيف للصرافة</h3>
+                    <p class="text-gray-400">
+                        نقدم حلولاً مالية متكاملة وآمنة لجميع احتياجاتك المالية
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition duration-300" onclick="event.preventDefault(); scrollToSection('about')">من نحن</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300" onclick="event.preventDefault(); scrollToSection('services')">خدماتنا</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300" onclick="event.preventDefault(); scrollToSection('features')">المميزات</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300" onclick="event.preventDefault(); scrollToSection('locations')">فروعنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">اتصل بنا</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone ml-2"></i>
+                            +967 774 736 089
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            حضرموت، اليمن
+                        </li>
+                    </ul>
+                </div>
+                
+                </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 بن عفيف للصرافة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/967738412860" target="_blank" class="fixed bottom-6 right-6 z-50 bg-accent text-white p-4 rounded-full shadow-lg hover:bg-[#04825d] transition duration-300 flex items-center">
+        <i class="fab fa-whatsapp text-xl ml-2"></i>
+        <span>تواصل معنا</span>
+    </a>
+
+    <script>
+        // Smooth scroll function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Define services data
+        const services = [
+            {
+                "id": 1,
+                "title": "إرسال الحوالات",
+                "description": "إرسال الحوالات من وإلى أي مكان خارج وداخل الجمهورية اليمنية",
+                "icon": "fas fa-exchange-alt",
+                "features": ["تحويلات داخلية", "تحويلات دولية", "معالجة فورية"]
+            },
+            {
+                "id": 2,
+                "title": "شحن الرصيد والباقات",
+                "description": "خدمات شحن الرصيد والباقات لجميع الشركات اليمنية",
+                "icon": "fas fa-mobile-alt",
+                "features": ["سبأفون", "يمن موبايل", "ام تي ان", "الهاتف الثابت", "واي - الانترنت"]
+            },
+            {
+                "id": 3,
+                "title": "كشف الحساب",
+                "description": "الاطلاع على كشف حسابك وجميع عملياتك في النظام",
+                "icon": "fas fa-file-invoice",
+                "features": ["كشف حساب شامل", "تفاصيل جميع العمليات", "تقارير مالية"]
+            }
+        ];
+
+        // Define features data
+        const features = [
+            {
+                "id": 1,
+                "title": "التحويل الفوري",
+                "description": "التحويل من حسابك إلى أي حساب آخر في نفس اللحظة",
+                "icon": "fas fa-bolt"
+            },
+            {
+                "id": 2,
+                "title": "التحكم الكامل",
+                "description": "التحكم الكامل بحسابك والاطلاع على كافة الحركات المالية",
+                "icon": "fas fa-cogs"
+            },
+            {
+                "id": 3,
+                "title": "أسعار العملات",
+                "description": "معرفة أسعار البيع والشراء للعملات الأجنبية لحظة بلحظة",
+                "icon": "fas fa-chart-bar"
+            },
+            {
+                "id": 4,
+                "title": "أمان متكامل",
+                "description": "أنظمة أمان متطورة لحماية حساباتك ومعاملاتك المالية",
+                "icon": "fas fa-shield-alt"
+            }
+        ];
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            // Select the existing navigation links container
+            const navLinksContainer = document.querySelector('nav .hidden.md\\:flex');
+            
+            if (mobileMenuButton && navLinksContainer) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // Toggle visibility and styling for mobile menu
+                    navLinksContainer.classList.toggle('hidden');
+                    navLinksContainer.classList.toggle('flex');
+                    navLinksContainer.classList.toggle('flex-col');
+                    navLinksContainer.classList.toggle('absolute');
+                    navLinksContainer.classList.toggle('top-16');
+                    navLinksContainer.classList.toggle('left-0');
+                    navLinksContainer.classList.toggle('right-0');
+                    navLinksContainer.classList.toggle('bg-white');
+                    navLinksContainer.classList.toggle('shadow-lg');
+                    navLinksContainer.classList.toggle('p-4');
+                    navLinksContainer.classList.toggle('space-y-4');
+                    // Remove desktop class for mobile view
+                    navLinksContainer.classList.toggle('space-x-6');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
